@@ -112,15 +112,14 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdfauthor={Tomàs Ferrandis Moscardó},
+  pdfauthor={@tofermos 2024},
   pdflang={ca-ES},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{GESTIÓ DE COMPTES LOCALS EN WINDOWS 11\\
-Sistemes Operatius Monolloc, 2024/2025}
-\author{Tomàs Ferrandis Moscardó}
-\date{2024-06-21}
+\title{GESTIÓ DE COMPTES LOCALS EN WINDOWS 11}
+\author{@tofermos 2024}
+\date{}
 
 \begin{document}
 \maketitle
@@ -137,8 +136,8 @@ Sistemes Operatius Monolloc, 2024/2025}
 \section{1. DES DE L'ENTORN GRÀFIC}\label{des-de-lentorn-gruxe0fic}
 
 Tot seguit observarem tres opcions per fer algunes gestions sobre
-usuaris. La més completa, pràctica i que serà que usares serà la primera
-que estudiarem (1.1).
+usuaris. De totes, usarem la que ofereix la consola que veiem al següent
+subapartat(1.1) per la més completa i pràctica.
 
 \subsection{1.1 CONSOLA D'ADMINISTRACIÓ D'EQUIPS.
 (compmgmt.msc)}\label{consola-dadministraciuxf3-dequips.-compmgmt.msc}
@@ -156,20 +155,23 @@ comptes (usuaris i grups). És l'opció des d'on treballarem.
 
 \textbf{Avanç}
 
-Les consoles gràfiques de Windows (MSC) Les Microsoft Management Console
-(fitxers amb extensió \emph{.msc}) són ferramentes gràfiques per a
-tasques d'administració i gestió dels sistemes operatius Windows. Podem
-trobar-les al directori d'instal·lació de Windows
-\emph{c:\textbackslash windows\textbackslash system32}. Més avant farem
-un repàs de totes.
+\begin{quote}
+Les Microsoft Management Console (fitxers amb extensió \emph{.msc}) són
+ferramentes gràfiques per a tasques d'administració i gestió dels
+sistemes operatius Windows.
 
-Per accedir directament:
+Podem trobar-les al directori d'instal·lació de Windows
+\emph{c:\textbackslash windows\textbackslash system32}.
+\end{quote}
+
+Per accedir directament a la Consola d'Adminsitració d'Equips:
 
 \includegraphics{png/fitxerCompmgmt.png}
 
 \subsection{1.2 ALTRES OPCIONS}\label{altres-opcions}
 
-Des del GUI podem fer algunes gestions amb els comptes d'usuaris.
+Des del GUI podem fer algunes gestions amb els comptes d'usuaris amb
+altres opcions gràfiques\ldots{}
 
 \subsubsection{1.2.1 Panel de Control. Administrar
 cuentas.}\label{panel-de-control.-administrar-cuentas.}
@@ -185,7 +187,8 @@ En esta opció veien que podem canviar el tipus de compte
 \begin{itemize}
 \tightlist
 \item
-  El tipus per defecte ``Estándard'' equival al grup ``Usuarios''.
+  El tipus per defecte ``Estándard'' equival al grup d'usuaris
+  ``Usuarios''.
 \item
   El tipus ``Administradores'' equival al grup d'usuaris
   ``Administradores''
@@ -194,10 +197,7 @@ En esta opció veien que podem canviar el tipus de compte
 \subsubsection{\texorpdfstring{1.2.2 Ferramenta
 \emph{netplwiz.exe}}{1.2.2 Ferramenta netplwiz.exe}}\label{ferramenta-netplwiz.exe}
 
-Windows + R i executem \textbf{netplwiz}. Similar als Control Panel
-Applets (CPL), components de Panel de Control que en permeten l'accés a
-determinades configuracions.
-
+Windows + R i executem \textbf{netplwiz}.
 \includegraphics{png/3netplwiz.png}
 
 En esta opció ens mostra els noms de grups d'usuaris als quals pertany
@@ -208,90 +208,89 @@ cada usuari. Ens permet afegir a algun grup distint d'Usuarios
 
 \textbf{Avanç}
 
+\begin{quote}
 Com podem observar a les imatges, cadascuna de les opcions gràfiques en
-execució genera un procés distint. A les imatges següents podem observar
-les tres alternatives gràfiques obertes al mateix temps i fixar-nos-hi
-en les \textbf{tasques (procesos)} que s'hi veuen a
-l'\emph{Administrador de Tasques} També veiem com el component de
-Windows Consola de Equipos, en executar-se dos vegades, genera dos
-processos.
+execució genera un procés distint.
+
+A les imatges següents podem observar les tres alternatives gràfiques
+obertes al mateix temps i fixar-nos-hi en les \textbf{tasques
+\textgreater(procesos)} que s'hi veuen a l'\emph{Administrador de
+Tasques}
+
+També veiem com el component de Windows Consola de Equipos, en
+executar-se dos vegades, genera dos processos.
+\end{quote}
 
 \includegraphics{png/123.png} !{[}{]})png/compmgmtTaskmanager.png)
 
 \section{2 USUARIS I GRUPS}\label{usuaris-i-grups}
 
-\subsection{2.1 Grups per defecte}\label{grups-per-defecte}
+\subsection{2.1 Comptes per defecte}\label{comptes-per-defecte}
 
-La instal·lació de Windows crea uns grups per defecte com veiem a la
-imatge següent. Ens centrarem en els dos principals
+La instal·lació de Windows crea uns grups per defecte per al seu propi
+funcionament.
+
+\includegraphics{png/grupsPerdefecte.png}
+
+Ara ens centrarem en els dos principals que adés hem comentat:
 
 \begin{itemize}
 \item
-  El Grup \textbf{Administradores}. Que tindran \textbf{drets} per
-  realitzar qualsevol tasca que afecte a la configuració i
-  \textbf{permisos} per a modificar carpetes i fitxers.
+  El Grup d'usuaris \textbf{Administradores}. Que tindran \textbf{drets}
+  per realitzar qualsevol tasca que afecte a la configuració del sistema
+  (SO, software, usuaris\ldots) i \textbf{permisos} per a modificar
+  carpetes i fitxers (crear, eliminar, modificar contingut, canviar de
+  propietari o permisos\ldots)
 \item
-  El Grup \textbf{Usuarios} No tindran drets per fer cap modificació
-  sobre la configuració (per exemple instal·lacions). I només podran fer
-  modificacions sobre fitxers i carpetes de la seua propietat.
-
-  Estos grups equivalen al ``tipo de cuenta'',
-  ``Administrador/Estándar'' de les opcions del punt 1.2
+  El Grup \textbf{Usuarios} A diferència dels anteriors, no tindran
+  drets per fer certes modificació sobre la configuració (com dnar
+  d'alta un usuaris o instal·lar). I només podran fer modificacions
+  sobre fitxers i carpetes de la seua propietat.
 \end{itemize}
 
-\subsection{2.2 Nous grups d'usuari}\label{nous-grups-dusuari}
+Estos dos grups equivalen al ``tipo de cuenta'', \emph{Administrador} i
+\emph{Estándar} comentatas al punt 1.2
 
-A banda d'estos dos grups básics, existeixen altres que crea també el
-sistema per al seu propi funcionament, però a nosaltres pot
-interessar-nos crear altres grups d'usuaris amb la finalitat d'establir
-quines persones poden fer determinades coses i quines altres no sobre
-les carpetes i fitxers o sobre el software de la màquina.
+També Windows crear en la instal·lació comptes d'usuari, per defecte
+normalment inhabilitats, com \emph{Administrador, Invitado o
+DefaulAccount}.
 
-A l'exemple que veiem hem creat un grup amb el nom ``Familia''.
+\includegraphics{png/usuarisCompmgmt.png}
 
-\begin{quote}
-Avanç: Un \textbf{permís} és una autorització sobre que se li dóna a un
-usuari (o grup) per a poder:
+\subsection{2.2 Nous comptes}\label{nous-comptes}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Llegir o
-\item
-  Escriure o
-\item
-  Canviar els permisos (1 i 2) o el \emph{propietari}
-\end{enumerate}
-
-unes carpetes o fitxers
-
-El \textbf{propietari} és, per defecte, l'usuari que ha creat la carpeta
-o fitxer.
-
-( Ho abordarem més avant )
-\end{quote}
+A nosaltres ens pot interessar crear altres grups d'usuaris amb
+finalitats organitzatives; establir quines persones poden fer acciones
+sobre el software (per exemple, instala·lacions), la configuració (per
+exemple, crear un usuari) o poden fer modificacions en carpetes i
+fitxers.
 
 El que hem de tenir en compte és que, si bé per defecte un usuari és
 \emph{administrador} o \emph{estándard} de forma exclusiva, podem crear
-nous grups i incloure-hi els usuaris que vullguem.
+nous grups i incloure-hi els usuaris que vullguem. Fixem-nos a la imatge
+següent. Observem que hem creat un grup ``Familia'' al qual hem afegit
+un usuari que pertany al grup ``Administradores'' ( Tomas) i també un
+usuari estandard del grup ``Usuarios''
+\includegraphics{png/mesdungrup.png}
 
-Fixem-nos a la imatge següent. Observem que hem creat un grup
-``Familia'' al qual hem afegit un usuari que pertany al grup
-``Administradores'' ( Tomas) i també un usuari estandard del grup
-``Usuarios''
+\textbf{Avanç}
 
-\includegraphics[width=0.8\textwidth,height=\textheight]{png/mesdungrup.png}
+\begin{quote}
+Un \textbf{permís} és una autorització que se li dóna a un usuari (o
+grup) sobre carpetes o fitxer per a poder: 1. Llegir o 2. Escriure o 3.
+Canviar els permisos (1 i 2) o el \emph{propietari} \textgreater{} unes
+carpetes o fitxers
+
+El \textbf{propietari} és, per defecte, l'usuari que ha creat la carpeta
+o fitxer.
+\end{quote}
 
 \subsection{2.3 Acumulació de permisos de lectura, escriptura o
 canvi}\label{acumulaciuxf3-de-permisos-de-lectura-escriptura-o-canvi}
 
 Per tant, un mateix usuari pot pertànyer a més d'un grup. En estos
 casos, els permisos de cadascun dels grups als quals pertany se sumen.
-
-\begin{quote}
-A la següent secció estudiarem el permisos amb més detall.
-\end{quote}
+Ho estudiarem més avant.
 
 \section{3. VISIÓ DES DE L'INTERFACE DE
 COMANDAMENTS}\label{visiuxf3-des-de-linterface-de-comandaments}
@@ -316,9 +315,11 @@ usuaris estan creats però el seu perfil ( carpetes encara no ).
 
 Pulsem \emph{Win-R : cmd} i comprovem amb
 
+\includegraphics{png/WinRcmd.png}
+
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{net users}
+\NormalTok{net user}
 \end{Highlighting}
 \end{Shaded}
 
@@ -334,7 +335,11 @@ Pulsem \emph{Win-R : cmd} i comprovem amb
 
 \subsection{3.2 Des de Powershell}\label{des-de-powershell}
 
-Puelsem \emph{Win-R: powershell} i comprovem amb
+Amb \emph{Win-R: powershell} o buscant
+
+\includegraphics{png/powershell.png}
+
+i comprovem amb
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -352,15 +357,29 @@ Puelsem \emph{Win-R: powershell} i comprovem amb
 
 \includegraphics{png/get-LocalGroup.png}
 
+\textbf{Avanç}
+
+\begin{quote}
+El Powershell és un potent shell de comandaments en línia amb un
+lleguatge per a desenvolupar scripts (.ps1). Teniu un repositori per
+aprendre'n més en este Git
+\end{quote}
+
 \section{5 VISIÓ AL REGISTRE del
 SISTEMA}\label{visiuxf3-al-registre-del-sistema}
 
 Observem com es registra al Registre del sistema els perfils (profiles)
-de cada usuari. \textbf{Avanç} El Registre del sistema
+de cada usuari.
+
+\textbf{Avanç}
+
+\begin{quote}
+El Registre del sistema
 (\emph{C:\textbackslash WINDOWS\textbackslash regedit.exe}) és un
 component essencial de tots el sistemes Windows. Formalment és una base
-de dades jeràrquica que emmagatzema configuracions i opcions del sistema
-operatiu i les aplicacions.
+de \textgreater dades jeràrquica que emmagatzema configuracions i
+opcions del sistema operatiu i les aplicacions.
+\end{quote}
 
 \includegraphics{png/regedit.png}
 
@@ -370,7 +389,9 @@ El perfil comprén tots els directoris ( ``Els meus Documents,
 Descàrregues\ldots{}'') i altres característiques que són exlusives de
 cada usuari o comuns.
 
-Veiem les carpetes: \includegraphics{png/users.png}
+Veiem les carpetes:
+
+\includegraphics{png/users.png}
 
 \subsection{4.1 Creació del perfil}\label{creaciuxf3-del-perfil}
 
@@ -390,11 +411,13 @@ punt que l'usuari acabat de crear:
   \emph{C:\textbackslash usuarios}
 \end{itemize}
 
+\textbf{NOTA}
+
 \begin{quote}
 Quan es crea el perfil de l'usuari? El perfil dels usuaris (
 c:\textbackslash users\textbar usuari\textbackslash\ldots es crea quan,
 una vegad creat, iniciem per primera vegada sessió amb ell. Notarem que
-el primer inci de sessió es fa molt lent, sobretot si no hem desactivat
+el primer inici de sessió es fa molt lent, sobretot si no hem desactivat
 Cortana Com a nota podem avançar que en Linux veurem que ocorre el
 mateix.
 \end{quote}
@@ -407,18 +430,19 @@ usuari i observar tres subcarpetes:
 \item
   Default
 \item
-  Públic
+  Acceso Público
 \item
-  Carpeta específica de cada usuari
+  Una carpeta específica per cada usuari
 \end{itemize}
 
 Cadascuna té una funció que veiem tot seguit.
 
 \subsection{4.1 Default}\label{default}
 
-La carpeta \textbf{Default} és una plantilla per a la creació de nous
-perfils d'usuari. Conté configuracions i arxius predeterminats que es
-copien a qualsevol nou compte d'usuari quan es crea. Ací es troben:
+La carpeta \textbf{c:\textbackslash users\textbackslash Default}
+{[}\^{}2{]} és una plantilla per a la creació de nous perfils d'usuari.
+Conté configuracions i arxius predeterminats que es copien a qualsevol
+nou compte d'usuari quan es crea. Ací es troben:
 
 \begin{itemize}
 \tightlist
@@ -438,10 +462,11 @@ primera vegada que inicien sessió.
 
 \includegraphics{png/CarpetesDefault.png}
 
-\subsection{4.2 Públic}\label{puxfablic}
+\subsection{4.2 Acceso Público}\label{acceso-puxfablico}
 
-La carpeta \textbf{Públic}. Carpeta compartida accessible per tots els
-usuaris de l'equip per compartir arxius sense cap restricció.
+La carpeta \textbf{Acceso Público} {[}\^{}3{]} Carpeta compartida
+accessible per tots els usuaris de l'equip per compartir arxius sense
+cap restricció.
 
 \includegraphics{png/CarpetesPublico.png}
 
@@ -472,6 +497,8 @@ Només podrem entrar a carpeta d'altres usuaris si som Administrador. Es
 proposa més avant una activitat per comprovar-ho.
 \end{quote}
 
+\newpage
+
 \section{5 Activitats}\label{activitats}
 
 \subsection{Activitat 1}\label{activitat-1}
@@ -481,8 +508,8 @@ proposa més avant una activitat per comprovar-ho.
 \tightlist
 \item
   Des de la Consola gràfica, crea un usuari que pertanya al grup
-  Administradores i un altre que siga no, només al grup Usuarios amb els
-  noms respectius:
+  Administradores i un altre que no siga administrador i pertanyerà sols
+  al grup d'usuaris:
 \end{enumerate}
 
 \begin{itemize}
@@ -497,27 +524,47 @@ proposa més avant una activitat per comprovar-ho.
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
 \item
-  Assegura't que l'usuari haja de canviar la contrassenya la primera
-  vegada d'iniciar sessió en els dos usuaris.
+  Assegura't que els dos usuaris hagen de canviar la contrassenya la
+  primera vegada d'iniciar sessió en els dos usuaris.
 \item
-  Inicia sessió, amb l'usuari \emph{Adm1}. 3.1 Crea un fitxer
-  \emph{Doc1.txt} a la carpeta personal de Adm1
-  C:\textbackslash users\textbackslash Adm1\textbackslash Documentos 3.2
-  Crea un nou fitxer \emph{EnPublic.txt} i guarda'l a la carpeta
-  C:\textbackslash Public\textbackslash Documents 3.3 Crea una carpeta
-  de
-  C:\textbackslash Default\textbackslash Documents\textbackslash Defecte
-  3.4 Dins d'esta, crea un fitxer \emph{def1.txt} 3.4 Observa els
-  continguts de les carpetes C:\textbackslash Users\textbackslash Adm1 i
-  C:\textbackslash Users\textbackslash User1
+  Inicia sessió, amb l'usuari \emph{Adm1}.
+
+  3.1 Observa els continguts de les carpetes
+  C:\textbackslash Users\textbackslash Adm1 i anota, si existeixen, qué
+  contenen.
+
+  3.2 Observa els continguts de les carpetes
+  C:\textbackslash Users\textbackslash User1 i anota, si existeixen, qué
+  contenen
+
+  3.3 Crea un fitxer \emph{Telefons.txt} a la carpeta personal de Adm1
+  C:\textbackslash users\textbackslash Public\textbackslash Documents
+
+  3.4 Crea una carpeta \emph{Diari} a la carpeta
+  C:\textbackslash Users\textbackslash Default\textbackslash Desktop
 \item
   Inicia sessió amb \emph{User1}. Ara comprovarem l'efecte dels canvis
   fets adés en este usuari nou.
 
-  4.1 Entra al perfil de User1
-  C:\textbackslash users\textbackslash User1 4.2 Comprova si apareix la
-  carpeta \emph{Defecte} i el seu contingut. 4.3 Intenta entrar a Public
-  i mira qué tens
+  4.1 Comprova si apareix la carpeta \emph{Diari} a l'escriptori
+
+  4.2 Està disponible
+  C:\textbackslash users\textbackslash Public\textbackslash Documents\textbackslash Telefons.txt
+
+  4.3 Entra al perfil de User1
+  C:\textbackslash users\textbackslash User1 i observa el contingut de
+  les carpetes
+\item
+  Sense tancar sessió (sessió de \emph{User1} ) intenta crear un grup
+  d'usuaris amb el nom de \emph{Botiga}
+
+  5.1 Afig dins d'ell els dos usuaris \emph{User1 i Adm1}
+
+  5.2 Crea un tercer usuari estàndard \emph{User2} i afig-lo al grup
+  \emph{Botiga}
+
+  5.3 Descarrega't un foto d'una botiga que usaran tots els usuaris. En
+  quina creus deuries alçar-la tractant-se d'una imatge per compartir?
 \end{enumerate}
 
 \end{document}
