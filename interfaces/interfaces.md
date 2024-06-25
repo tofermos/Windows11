@@ -43,11 +43,8 @@ Per accedir a qualsevol directori en Windows podem usar unes etiquetes (lletres)
 
 
 **Avanç**
-> En Windows quan per indicar la ubicació d'un fitxer o carpeta comencem per una unitat, parlarem de *rutes absolutes*
-> Exemples: 
-> C:\\Windows
-> F:\\ParticioDades\\CopiaDeSeguretat
-> Z:\\UnitatDeXarxa\\FacturesAntigues
+
+> En Windows quan per indicar la ubicació d'un fitxer o carpeta comencem per una unitat, parlarem de *rutes absolutes*. Alguns exemples serien: *C:\\Windows*; *F:\\ParticioDades\\CopiaDeSeguretat*;*  Z:\\UnitatDeXarxa\\FacturesAntigues*
 
 
 # 2 OPCIONS DE L'EXPLORADOR
@@ -108,9 +105,11 @@ Per exemple:
 * Si activem la recuperació del sistema es crea la carpeta **C:\\$Recycle.bin**
 * Si instal·lem el MS Office s'hi crea **C:\\MSOCache**
 
-**Nota**
->El "$" com a inici de no de carpeta és una forma d'ocultar la carpeta. Si no tenim habilitada l'opció de mostrar carpetes i arxius >ocults (com hem vsit adés) no veiem estes carpetes.
->Hi ha altra forma d'ocultar amb atributs que estudiarem més avant.
+**Notes**
+
+>* El "$" com a inici de no de carpeta és una forma d'ocultar la carpeta. 
+>* Si no tenim habilitada l'opció de mostrar carpetes i arxius ocults (com hem vist adés) no veiem estes carpetes.
+>* Hi ha altra forma d'ocultar amb atributs que estudiarem més avant.
 
 ![](png/carpetesPrincipalsCreadesDespres.png)
 
@@ -196,9 +195,10 @@ Existeixen algunes combinacions de tecles ( Dreceres ) que ens permeten realitza
 ## 5.5 Dreceres personalitzades
 
 Pots crear les teues dreceres per a aplicacions específiques:
-1. Fes clic amb el botó dret sobre la icona de l'aplicació i selecciona "Propietats".
-2. A la pestanya "Accés directe", trobaràs el camp "Tecla de drecera".
-3. Fes clic al camp i pressiona la combinació de tecles que vols assignar com a drecera.
+
+1.  Fes clic amb el botó dret sobre la icona de l'aplicació i selecciona "Propietats".
+2.  A la pestanya "Accés directe", trobaràs el camp "Tecla de drecera".
+3.  Fes clic al camp i pressiona la combinació de tecles que vols assignar com a drecera.
 
 
 L'ús de la drecera **Windows + R** ens servirà per introduir el concepte de Variables del Sistema i concretament la variable **PATH**. 
