@@ -46,7 +46,7 @@ Per accedir a qualsevol directori en Windows podem usar unes etiquetes (lletres)
 > En Windows quan per indicar la ubicació d'un fitxer o carpeta comencem per una unitat, parlarem de *rutes absolutes*
 > Exemples: 
 > C:\\Windows
-> F:\\ParticioDades\CopiaDeSeguretat
+> F:\\ParticioDades\\CopiaDeSeguretat
 > Z:\\UnitatDeXarxa\\FacturesAntigues
 
 
@@ -83,6 +83,8 @@ Podem fer el canvi sobre tota la Unitat o sobre una carpeta. Encara que amb "Apl
 
 # 3. CARPETES PRINCIPALS de WINDOWS 11
 
+## 3.1 PER DEFECTE
+
 En la instal·lació de Windows 11 s'hi creen les carpetes principals següents:
 
 ![](png/carpetesPrincipals.png)
@@ -97,9 +99,21 @@ Les funcions són:
 * **C:\\PerfLogs** Conté els registres de rendiment i diagnòstic del sistema.
 * **C:\\Recovery** Emmagatzema els arxius necessaris per a la recuperació del sistema.
 
-A la unitat C:\\ poden crear-se'n més en funció de posteriors configuracions i instal·lacions. Per exemple si activem la recuperació del sistema o instal·lem el MS Office.
+## 3.2 NOVES CARPETES
+
+A la unitat C:\\ poden crear-se'n més en funció de posteriors configuracions i instal·lacions. 
+
+Per exemple:
+
+* Si activem la recuperació del sistema es crea la carpeta **C:\\$Recycle.bin**
+* Si instal·lem el MS Office s'hi crea **C:\\MSOCache**
+
+**Nota**
+>El "$" com a inici de no de carpeta és una forma d'ocultar la carpeta. Si no tenim habilitada l'opció de mostrar carpetes i arxius >ocults (com hem vsit adés) no veiem estes carpetes.
+>Hi ha altra forma d'ocultar amb atributs que estudiarem més avant.
 
 ![](png/carpetesPrincipalsCreadesDespres.png)
+
 
 # 4. PAPERERA DE RECICLATGE
 
