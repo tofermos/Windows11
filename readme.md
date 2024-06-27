@@ -1,7 +1,7 @@
 # WINDOWS 11
- | 
-:---------|--:
-![](recursos/windows11.png)|Tomàs Ferrandis Moscardó<br>tomasferrandis@gmail.com <br>
+|||
+|:---------|--:|
+|![](recursos/windows11.png)|Tomàs Ferrandis Moscardó<br>tomasferrandis@gmail.com <br>|
  
  |
 :------|---:
