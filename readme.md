@@ -14,6 +14,6 @@ Tomàs Ferrandis Moscardó<br>tomasferrandis@gmail.com <br>
 |7. [Atributs, propietat i permisos SHARE](gestions/permisos.md)|[![](recursos/iconopdf.png)](gestions/permisos.pdf)|
 
 
-|||
-|:---------|--:|
-|*©tofermos 2024 <br>by Tomàs Ferrandis Moscardó is licensed under CC BY-NC-ND 4.0*|![](recursos/CC_BY-NC-ND.png)|
+
+*©tofermos 2024 <br>by Tomàs Ferrandis Moscardó is licensed under CC BY-NC-ND 4.0*
+![](recursos/CC_BY-NC-ND.png)
