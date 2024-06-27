@@ -29,7 +29,7 @@ Per accedir a qualsevol directori en Windows podem usar unes etiquetes (lletres)
 2.  Una partició d'una unitat fisica de memòria secundaria. 
 3.  Una carpeta compartida en un xarxa.
 
-## 1.1 Unitats físiques.
+## 1.1 Unitats físiques
 
 ![](png/unitatsDiscos.png)
 
@@ -54,29 +54,104 @@ Abans de passar al següents punts necessitem canviar alguna configuració de la
 
 ## 2.1 Vista de detalls o metadades
 
-En l'opció VER triem Detalles
+En l'opció VER triem *Detalles* És la configuració de Vista que més informació ens aporta.
 
 ![](png/verVistaDetalle0.png)
 
-## 2.2 Mostrar ocults i extensions
+Després seleccionen què volem veure amb *Mostrar* 
 
-En l'opció "Ver" de cada carpeta, podem triar què volem que ens mostre o oculte. 
-Veiem dos canvis convenients per poder treballar com a "Administradors".
+![](png/verDetalles.png)
+
+... podem buscar més detalls amb *Más*
+
+![](png/elegirDetalles.png)
+
+Veiem que podem seleccionar moltes característiques. Algunes prou interessants poden ser:
+
+* Data de creació
+* Data de modificació
+* Data darrera accès
+* Tamany
+* Propietari
+* Atributs
+
+Per tenir una vista com esta...
+
+![](png/DetallesBarra.png)
+
+## 2.2 Opciones de carpetes
+
+En l'opció "Ver" de cada carpeta, podem triar què volem que ens mostre o oculte entre altres peculiaritats de l'explorador de Windows.
+
+![](png/veropcionesCarpeta0.png)
+
+Hi ha moltes opcions interessants a les **Opciones de carpeta**. Investigueu-ho! 
+Veiem 3 canvis interessants per poder fer alguna tasca com a "Administradors":
 
 * Veure tots els fitxers i carpetes ocultes.
 * Veure totes les extensions dels fitxers.
+* Ocultar arxius protegits del SO (recomanat)
 
 En els **...** desplegar i triar *Opciones*
 
-![](png/verOpcionesdecarpeta1.png)
+### 2.2.1 Mostrar o no carpetes i fitxers ocults
 
-![](png/verOpcionesdecarpeta2.png)
 
-Podem fer el canvi sobre tota la Unitat o sobre una carpeta. Encara que amb "Aplicar a las carpetas" també s'aplicaria a tota la unitat.
+![](png/veropcionesCarpeta2.png)
 
-## 2.3 Detalls o característiques a mostrar
+Altra foram d'activar esta opció és:
 
-![](png/verVistaDetalle.png)
+![](png/verOcultos.png)
+
+### 2.2.2 No ocultar les extensions conegudes de fitxers
+
+S'amaguen per defecte extensions de fitxers com *txt, jpg...*. Per a tasques de manteniment pot interessar-nos canviar l'extensió, nom etc...
+
+![](png/veropcionesCarpeta3.png)
+
+És recomanable ocultar els arxius del SO protegits per evitar que, accidentament, es borren o canvien de nom o lloc però un usuari administrador en algun moment pot necessitar veure'ls
+
+### 2.2.3 Ocultar els arxius protegits del SO
+
+Per seguretat la instal·lació del Windows deixa estos arxius ocults. 
+
+![](png/veropcionesCarpeta4.png)
+
+
+
+Podem fer canvis sobre tota la Unitat que s'aplicaran a tota una carpeta. Encara que amb "Aplicar a las carpetas" també s'aplicaria a tota la unitat.
+
+**Recomanació**
+> Una pràctica convenient és fer visibles els arxius de SO o ocults estrictament de la carpeta a manipular.
+> També es recomnables tornar a ocultar els arxius i carpetes des sistema i els ocults una vegada realitzades les tasques de menteniment per als qual els hem fet visibles.
+
+## 2.3 Aplicar a altres carpetes
+
+Windows permet que la configuració de la "Vista" que hem establert segons el punts 2.1 i 2.2 anteriors en una carpeta puga extendre's a altres carpetes del mateix "tipus" (^1) amb el botó "Aplicar a las carpetas". Este canvi es pot revertir amb "Restaurar carpetas".
+![](png/aplicaralasCarpetas.png)
+![](png/restaurarCarpetas.png)
+
+[^1]: No existeixen ni en Windows ni en Linux carpetes de diferents "tipus". El missatge, gens encertat, es refereix a subcarpetes o altres carpetes de la mateixa unitat amb contingut similar. 
+
+## 2.4 Exemple comentat
+
+Si observem les següents vistes comprovem que l'ocultació de les extensions conegudes pot mostrar-nos fitxers amb el "mateix" nom i icona. Si estem treballant amb la mateixa imatge guardant-la en diferents formats o estem exportant dades a fulles de càlcul de MS Office o LibreOffice o fitxers csv, no hi ha manera de diferenciar. A no ser que, com a l'exemple, mostrem el detall "Tipo".
+
+![](png/arxiusambextensioVisible.png)
+
+![](png/arxiusambextensioVisible.png)
+
+**Avanç**
+> Ho vorem amb més detall quan estudiem el atributs. Per ocultar un fitxer o carpeta des del GUI ho fem amb una marca.
+
+![](png/atributOcult.png)
+
+## 2.4 CERCAR
+
+Des de l'explorador podem buscar un fitxer o directori. La recerca es farà a partir de la carpeta en què ens situem. A més, cal tindre en compte que s'hi localitzaran els arxiu i carpetes ocultes com podeu comprovar a l'exemple següent.
+
+![](png/cercar.png)
+
 
 # 3. CARPETES PRINCIPALS de WINDOWS 11
 
@@ -107,9 +182,9 @@ Per exemple:
 
 **Notes**
 
->* El "$" com a inici de no de carpeta és una forma d'ocultar la carpeta. 
+>* El "$" com a inici de no de carpeta sol posar-lo el sistema en carpetes ocultes. 
 >* Si no tenim habilitada l'opció de mostrar carpetes i arxius ocults (com hem vist adés) no veiem estes carpetes.
->* Hi ha altra forma d'ocultar amb atributs que estudiarem més avant.
+
 
 ![](png/carpetesPrincipalsCreadesDespres.png)
 
@@ -153,13 +228,13 @@ Existeixen algunes combinacions de tecles ( Dreceres ) que ens permeten realitza
 
 - **Ctrl + C**: Copiar.
 - **Ctrl + X**: Tallar.
-- **Ctrl + V**: Enganxar.
+- **Ctrl + V**: Enganxar, apegar.
 - **Ctrl + Z**: Desfer.
 - **Ctrl + Y**: Repetir.
-- **Ctrl + A**: Seleccionar tot.
-- **Ctrl + S**: Desar.
+- **Ctrl + A**: Seleccionar-ho tot.
+- **Ctrl + S**: Desar, alçar o guardar
 - **Ctrl + P**: Imprimir.
-- **Ctrl + N**: Nou (crea un nou document o finestra, depenent de l'aplicació).
+- **Ctrl + N**: Nou (crea un nou document o finestra, depenent del programa obert).
 - **Ctrl + F**: Buscar.
 - **Alt + Tab**: Canviar entre les aplicacions obertes.
 - **Alt + F4**: Tancar la finestra activa.
@@ -190,7 +265,7 @@ Existeixen algunes combinacions de tecles ( Dreceres ) que ens permeten realitza
 ## 5.4 Dreceres de la terminal de Windows
 
 - **Ctrl + Maj + N**: Obre una nova finestra de la Terminal amb privilegis d'administrador.
-- **Ctrl + Maiúscules + T**: Obre una nova pestanya a la Terminal.
+- **Ctrl + Majúscules + T**: Obre una nova pestanya a la Terminal.
 
 ## 5.5 Dreceres personalitzades
 
@@ -202,3 +277,38 @@ Pots crear les teues dreceres per a aplicacions específiques:
 
 
 L'ús de la drecera **Windows + R** ens servirà per introduir el concepte de Variables del Sistema i concretament la variable **PATH**. 
+
+
+## 6 ACTIVITATS
+
+### 6.1 Dreceres 
+
+1.  Obri l'explorador usant tres dreceres alternatives.
+    a)  La pròpia.
+    b)  Sabent que l'executable de l'explorador es *explorer.exe*
+    c)  Buscant-lo en el altra drecera pel menú Windows.
+    
+2. Si la consola de Windows de Admintrador de equipos és *compmgmt.msc*, averigua si tens alguna possible partició a la que assignar una unitat de xarxa (X:)
+
+3. Troba el fitxer *notepad.exe*. 
+4. Crea un fitxer *Text1.txt* amb el Bloc de Notes. 
+5. Copia'l usant les Dreceres ( Copiar i Enganxar) i renombra el nou com *Text1.rtf*
+
+
+### 6.2 Configuració de l'explorador    
+
+1.  Configura la carpeta Documents de l'usuari l'explorador de Windows per a que mostre les extensions de tots els fitxer, els fitxers i carpetes ocultes i els protegits de Windows.
+
+2. Configura la vista per veure els detalls o característiques (metainformació) següent:
+  * Propietari.
+  * Atributs.
+  * Data de creació de cada fitxer o subcarpeta.
+  * Data en què s'ha accedit per darrera vegada a cada fitxer o subcarpeta.
+  * Data en què s'ha modificat per darrera vegada a cada fitxer o subcarpeta.
+  
+3. Fes que esta configuració s'aplique a totes les carpetes que continguen "documents".
+4. Entra en C:\\Windows i assegura't que no es vegen ni les carpetes ocultes ni les protegides pel sistema. 
+5. Si fas que no es vegen els fitxers ocults en Documents i vulgueres trobar un a partir del seu nom, ¿podries sense canviar la vista de la carpeta? Pots reproduir-ho creant un fitxer i ocultant-lo?
+
+
+  
