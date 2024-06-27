@@ -11,7 +11,6 @@ output:
 El contingut d'este repositori és per al mòdul SOM de 1r de SMX i està compartit amb llicència CC BY-NC-ND.
 
 
-
 ## Windows 11
 |||
 ------------------------- | -- | --
