@@ -1,12 +1,8 @@
-# SISTEMES OPERATIUS MONOLLOC
+# WINDOWS 11
 |||
 |:---------|--:|
 |![](recursos/windows11.png)|Tomàs Ferrandis Moscardó<br>tomasferrandis@gmail.com <br>|
 
-El contingut d'este repositori és per al mòdul SOM de 1r de SMX i està compartit amb llicència CC BY-NC-ND.
-  
-
-## Windows 11
 |||
 |:------|---:|
 |1. [Instal·lació Windows 11](manteniment/instalar.md)|[![](recursos/iconopdf.png)](manteniment/instalar.pdf)|
@@ -21,4 +17,4 @@ El contingut d'este repositori és per al mòdul SOM de 1r de SMX i està compar
 
 |||
 |:------|--:|
-|*SOM © 2024 by Tomàs Ferrandis Moscardó is licensed under CC BY-NC-ND 4.0*|![](recursos/CC_BY-NC-ND.png){width=30%}|
+|*©tofermos 2024 by Tomàs Ferrandis Moscardó is licensed under CC BY-NC-ND 4.0*|![](recursos/CC_BY-NC-ND.png){width=30%}|
