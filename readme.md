@@ -2,10 +2,9 @@
 |||
 |:---------|--:|
 |![](recursos/windows11.png)|Tomàs Ferrandis Moscardó<br>tomasferrandis@gmail.com <br>|
-|![](recursos/CC_BY-NC-ND.png)| |
 
 El contingut d'este repositori és per al mòdul SOM de 1r de SMX i està compartit amb llicència CC BY-NC-ND.
-
+  
 
 ## Windows 11
 |||
