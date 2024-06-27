@@ -3,16 +3,12 @@ output:
   html_document: default
   pdf_document: default
 ---
-# SISTEMES OPERATIUS MONOLLOC
+# WINDOWS 11
 |||
 |:---------|--:|
 |![](recursos/windows11.png){width=90%}|Tomàs Ferrandis Moscardó<br>tomasferrandis@gmail.com <br> ![](recursos/CC_BY-NC-ND.png){width=30%}| |
 
-El contingut d'este repositori és per al mòdul SOM de 1r de SMX i està compartit amb llicència CC BY-NC-ND.
-
-
-## Windows 11
-|||
+|Temes||
 ------------------------- | -- | --
 1. [Instal·lació Windows 11](manteniment/instalar.html)|[![](recursos/iconopdf.png)](manteniment/instalar.pdf)|[![](recursos/iconomd.png)](manteniment/instalar.md)
 2. [Recuperació de la instal·lació Windows 11](manteniment/recuperar.html)|[![](recursos/iconopdf.png)](manteniment/recuperar.pdf)|[![](recursos/iconomd.png)](manteniment/recuperar.md)
