@@ -4,7 +4,7 @@
 Tomàs Ferrandis Moscardó<br>tomasferrandis@gmail.com <br>
 
 |![](recursos/iconomd.png)||
-|:---------------------------------------------|--:|
+|:--------------------------------------------------------------|--:|
 |1. [Instal·lació Windows 11](manteniment/instalar.md)|[![](recursos/iconopdf.png)](manteniment/instalar.pdf)|
 |2. [Recuperació de la instal·lació Windows 11](manteniment/recuperar.md)|  [![](recursos/iconopdf.png)](manteniment/recuperar.pdf)|
 |3. [Introducció a l'interface gràfic GUI)](interfaces/interfaces.md)|[![](recursos/iconopdf.png)](interfaces/interfaces.pdf)|
