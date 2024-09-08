@@ -110,7 +110,7 @@ Per accedir a qualsevol directori en Windows podem usar unes etiquetes
   Una carpeta compartida en un xarxa.
 \end{enumerate}
 
-\subsection{1.1 Unitats físiques.}\label{unitats-fuxedsiques.}
+\subsection{1.1 Unitats físiques}\label{unitats-fuxedsiques}
 
 \includegraphics{png/unitatsDiscos.png}
 
@@ -143,16 +143,52 @@ mostre informació sobre els fitxers i carpetes (metadades).
 \subsection{2.1 Vista de detalls o
 metadades}\label{vista-de-detalls-o-metadades}
 
-En l'opció VER triem Detalles
+En l'opció VER triem \emph{Detalles} És la configuració de Vista que més
+informació ens aporta.
 
 \includegraphics{png/verVistaDetalle0.png}
 
-\subsection{2.2 Mostrar ocults i
-extensions}\label{mostrar-ocults-i-extensions}
+Després seleccionen què volem veure amb \emph{Mostrar}
+
+\includegraphics{png/verDetalles.png}
+
+\ldots{} podem buscar més detalls amb \emph{Más}
+
+\includegraphics{png/elegirDetalles.png}
+
+Veiem que podem seleccionar moltes característiques. Algunes prou
+interessants poden ser:
+
+\begin{itemize}
+\tightlist
+\item
+  Data de creació
+\item
+  Data de modificació
+\item
+  Data darrera accès
+\item
+  Tamany
+\item
+  Propietari
+\item
+  Atributs
+\end{itemize}
+
+Per tenir una vista com esta\ldots{}
+
+\includegraphics{png/DetallesBarra.png}
+
+\subsection{2.2 Opciones de carpetes}\label{opciones-de-carpetes}
 
 En l'opció ``Ver'' de cada carpeta, podem triar què volem que ens mostre
-o oculte. Veiem dos canvis convenients per poder treballar com a
-``Administradors''.
+o oculte entre altres peculiaritats de l'explorador de Windows.
+
+\includegraphics{png/veropcionesCarpeta0.png}
+
+Hi ha moltes opcions interessants a les \textbf{Opciones de carpeta}.
+Investigueu-ho! Veiem 3 canvis interessants per poder fer alguna tasca
+com a ``Administradors'':
 
 \begin{itemize}
 \tightlist
@@ -160,21 +196,88 @@ o oculte. Veiem dos canvis convenients per poder treballar com a
   Veure tots els fitxers i carpetes ocultes.
 \item
   Veure totes les extensions dels fitxers.
+\item
+  Ocultar arxius protegits del SO (recomanat)
 \end{itemize}
 
 En els \textbf{\ldots{}} desplegar i triar \emph{Opciones}
 
-\includegraphics{png/verOpcionesdecarpeta1.png}
+\subsubsection{2.2.1 Mostrar o no carpetes i fitxers
+ocults}\label{mostrar-o-no-carpetes-i-fitxers-ocults}
 
-\includegraphics{png/verOpcionesdecarpeta2.png}
+\includegraphics{png/veropcionesCarpeta2.png}
 
-Podem fer el canvi sobre tota la Unitat o sobre una carpeta. Encara que
-amb ``Aplicar a las carpetas'' també s'aplicaria a tota la unitat.
+Altra foram d'activar esta opció és:
 
-\subsection{2.3 Detalls o característiques a
-mostrar}\label{detalls-o-caracteruxedstiques-a-mostrar}
+\includegraphics{png/verOcultos.png}
 
-\includegraphics{png/verVistaDetalle.png}
+\subsubsection{2.2.2 No ocultar les extensions conegudes de
+fitxers}\label{no-ocultar-les-extensions-conegudes-de-fitxers}
+
+S'amaguen per defecte extensions de fitxers com \emph{txt, jpg\ldots{}}.
+Per a tasques de manteniment pot interessar-nos canviar l'extensió, nom
+etc\ldots{}
+
+\includegraphics{png/veropcionesCarpeta3.png}
+
+És recomanable ocultar els arxius del SO protegits per evitar que,
+accidentament, es borren o canvien de nom o lloc però un usuari
+administrador en algun moment pot necessitar veure'ls
+
+\subsubsection{2.2.3 Ocultar els arxius protegits del
+SO}\label{ocultar-els-arxius-protegits-del-so}
+
+Per seguretat la instal·lació del Windows deixa estos arxius ocults.
+
+\includegraphics{png/veropcionesCarpeta4.png}
+
+Podem fer canvis sobre tota la Unitat que s'aplicaran a tota una
+carpeta. Encara que amb ``Aplicar a las carpetas'' també s'aplicaria a
+tota la unitat.
+
+\textbf{Recomanació} \textgreater{} Una pràctica convenient és fer
+visibles els arxius de SO o ocults estrictament de la carpeta a
+manipular. \textgreater{} També es recomnables tornar a ocultar els
+arxius i carpetes des sistema i els ocults una vegada realitzades les
+tasques de menteniment per als qual els hem fet visibles.
+
+\subsection{2.3 Aplicar a altres
+carpetes}\label{aplicar-a-altres-carpetes}
+
+Windows permet que la configuració de la ``Vista'' que hem establert
+segons el punts 2.1 i 2.2 anteriors en una carpeta puga extendre's a
+altres carpetes del mateix ``tipus'' (\^{}1) amb el botó ``Aplicar a las
+carpetas''. Este canvi es pot revertir amb ``Restaurar carpetas''.
+\includegraphics{png/aplicaralasCarpetas.png}
+\includegraphics{png/restaurarCarpetas.png}
+
+\subsection{2.4 Exemple comentat}\label{exemple-comentat}
+
+Si observem les següents vistes comprovem que l'ocultació de les
+extensions conegudes pot mostrar-nos fitxers amb el ``mateix'' nom i
+icona. Si estem treballant amb la mateixa imatge guardant-la en
+diferents formats o estem exportant dades a fulles de càlcul de MS
+Office o LibreOffice o fitxers csv, no hi ha manera de diferenciar. A no
+ser que, com a l'exemple, mostrem el detall ``Tipo''.
+
+\includegraphics{png/arxiusambextensioVisible.png}
+
+\includegraphics{png/arxiusambextensioVisible.png}
+
+\textbf{Avanç} \textgreater{} Ho vorem amb més detall quan estudiem el
+atributs. Per ocultar un fitxer o carpeta des del GUI ho fem amb una
+marca.
+
+\includegraphics{png/atributOcult.png}
+
+\subsection{2.4 CERCAR}\label{cercar}
+
+Des de l'explorador podem buscar un fitxer o directori. La recerca es
+farà a partir de la carpeta en què ens situem. A més, cal tindre en
+compte que s'hi localitzaran els arxiu i carpetes ocultes com podeu
+comprovar a l'exemple següent.
+
+\includegraphics{png/cercar.png}
 
 \section{3. CARPETES PRINCIPALS de WINDOWS
 11}\label{carpetes-principals-de-windows-11}
@@ -236,13 +339,11 @@ Per exemple:
 \begin{itemize}
 \tightlist
 \item
-  El ``\$'' com a inici de no de carpeta és una forma d'ocultar la
-  carpeta.
+  El ``\$'' com a inici de no de carpeta sol posar-lo el sistema en
+  carpetes ocultes.
 \item
   Si no tenim habilitada l'opció de mostrar carpetes i arxius ocults
   (com hem vist adés) no veiem estes carpetes.
-\item
-  Hi ha altra forma d'ocultar amb atributs que estudiarem més avant.
 \end{itemize}
 \end{quote}
 
@@ -306,20 +407,20 @@ el ratolí.
 \item
   \textbf{Ctrl + X}: Tallar.
 \item
-  \textbf{Ctrl + V}: Enganxar.
+  \textbf{Ctrl + V}: Enganxar, apegar.
 \item
   \textbf{Ctrl + Z}: Desfer.
 \item
   \textbf{Ctrl + Y}: Repetir.
 \item
-  \textbf{Ctrl + A}: Seleccionar tot.
+  \textbf{Ctrl + A}: Seleccionar-ho tot.
 \item
-  \textbf{Ctrl + S}: Desar.
+  \textbf{Ctrl + S}: Desar, alçar o guardar
 \item
   \textbf{Ctrl + P}: Imprimir.
 \item
-  \textbf{Ctrl + N}: Nou (crea un nou document o finestra, depenent de
-  l'aplicació).
+  \textbf{Ctrl + N}: Nou (crea un nou document o finestra, depenent del
+  programa obert).
 \item
   \textbf{Ctrl + F}: Buscar.
 \item
@@ -390,7 +491,7 @@ Windows}\label{dreceres-de-la-terminal-de-windows}
   \textbf{Ctrl + Maj + N}: Obre una nova finestra de la Terminal amb
   privilegis d'administrador.
 \item
-  \textbf{Ctrl + Maiúscules + T}: Obre una nova pestanya a la Terminal.
+  \textbf{Ctrl + Majúscules + T}: Obre una nova pestanya a la Terminal.
 \end{itemize}
 
 \subsection{5.5 Dreceres
@@ -415,5 +516,83 @@ Pots crear les teues dreceres per a aplicacions específiques:
 L'ús de la drecera \textbf{Windows + R} ens servirà per introduir el
 concepte de Variables del Sistema i concretament la variable
 \textbf{PATH}.
+
+\subsection{6 ACTIVITATS}\label{activitats}
+
+\subsubsection{6.1 Dreceres}\label{dreceres-1}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Obri l'explorador usant tres dreceres alternatives.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii})}
+  \tightlist
+  \item
+    La pròpia.
+  \item
+    Sabent que l'executable de l'explorador es \emph{explorer.exe}
+  \item
+    Buscant-lo en el altra drecera pel menú Windows.
+  \end{enumerate}
+\item
+  Si la consola de Windows de Admintrador de equipos és
+  \emph{compmgmt.msc}, averigua si tens alguna possible partició a la
+  que assignar una unitat de xarxa (X:)
+\item
+  Troba el fitxer \emph{notepad.exe}.
+\item
+  Crea un fitxer \emph{Text1.txt} amb el Bloc de Notes.
+\item
+  Copia'l usant les Dreceres ( Copiar i Enganxar) i renombra el nou com
+  \emph{Text1.rtf}
+\end{enumerate}
+
+\subsubsection{6.2 Configuració de
+l'explorador}\label{configuraciuxf3-de-lexplorador}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Configura la carpeta Documents de l'usuari l'explorador de Windows per
+  a que mostre les extensions de tots els fitxer, els fitxers i carpetes
+  ocultes i els protegits de Windows.
+\item
+  Configura la vista per veure els detalls o característiques
+  (metainformació) següent:
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Propietari.
+\item
+  Atributs.
+\item
+  Data de creació de cada fitxer o subcarpeta.
+\item
+  Data en què s'ha accedit per darrera vegada a cada fitxer o
+  subcarpeta.
+\item
+  Data en què s'ha modificat per darrera vegada a cada fitxer o
+  subcarpeta.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Fes que esta configuració s'aplique a totes les carpetes que
+  continguen ``documents''.
+\item
+  Entra en C:\textbackslash Windows i assegura't que no es vegen ni les
+  carpetes ocultes ni les protegides pel sistema.
+\item
+  Si fas que no es vegen els fitxers ocults en Documents i vulgueres
+  trobar un a partir del seu nom, ¿podries sense canviar la vista de la
+  carpeta? Pots reproduir-ho creant un fitxer i ocultant-lo?
+\end{enumerate}
 
 \end{document}
