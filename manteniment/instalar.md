@@ -36,7 +36,7 @@ En crear i configurar la màquina, hem de revisar el l'ordre d'arrencada de la m
 * Seleccionar TPM (Versió 2.0)
 * Activar la EFI
 
-El TPM (Mòdul de Plataforma Segura) és un xip de seguretat que emmagatzema claus criptogràfiques i dades sensibles en un ordinador. Ajuda a protegir el sistema operatiu i a evitar accessos no autoritzats, especialment en funcions com el xifratge de disc o l'autenticació segura.
+El TPM (Mòdul de Plataforma Segura) és un xip de seguretat que emmagatzema claus criptogràfiques i dades sensibles en un ordinador. Ajuda a protegir el sistema operatiu i a evitar accessos no autoritzats, especialment en funcions com el xifratge de disc o l'autenticació segura.            
 
 ![](png/configuracióMV.png){width=70%}
 

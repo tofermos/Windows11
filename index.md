@@ -1,7 +1,7 @@
 ---
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 # WINDOWS 11
 |||
@@ -17,6 +17,7 @@ output:
 5. [Gestió de comptes locals (usuaris i grups)](gestions/comptesLocals.html)|[![](recursos/iconopdf.png)](gestions/comptesLocals.pdf)|
 6. [Instal·lació i desintal·lació de Software](software/software.html)|[![](recursos/iconopdf.png)](software/software.pdf)|
 7. [Atributs, propietat i permisos SHARE](gestions/permisos.html)|[![](recursos/iconopdf.png)](gestions/permisos.pdf)|
+8. [Gestió des de l'entorn gràfic](gestiodelequip/gestiodelequip.html)|[![](recursos/iconopdf.png)](gestiodelequip/gestiodelequip.pdf)|
 
 
 
