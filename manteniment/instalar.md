@@ -7,7 +7,7 @@ papersize: A4
 linestretch: 1.5
 output:
   html_document:
-    toc: true
+    toc: true 
     toc_float: true
     toc_depth: 3
     df_print: paged

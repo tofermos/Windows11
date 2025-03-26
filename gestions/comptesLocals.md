@@ -6,16 +6,16 @@ lang: "ca-ES"
 papersize: A4
 linestretch: 1.5
 output:
+  pdf_document:
+    toc: true
+    keep_tex: true
+    latex_engine: xelatex
   html_document:
     toc: true
     toc_float: true
     toc_depth: 3
     df_print: paged
     number_sections: false
-  pdf_document:
-    toc: true
-    keep_tex: true
-    latex_engine: xelatex
 ---
 
   \newpage
@@ -179,7 +179,7 @@ get-LocalGroup
 > El Powershell és un potent shell de comandaments en línia amb un lleguatge per a desenvolupar scripts (.ps1). 
 > Teniu un repositori per aprendre'n més en este Git
 
-# 5 VISIÓ AL REGISTRE del SISTEMA
+# 4 VISIÓ AL REGISTRE del SISTEMA
 
 Observem com es registra al Registre del sistema els perfils (profiles) de cada usuari.
 
@@ -190,7 +190,7 @@ Observem com es registra al Registre del sistema els perfils (profiles) de cada 
 ![](png/regedit.png)
 
 
-# 4 PERFIL DE L'USUARI
+# 5 PERFIL DE L'USUARI
 
 El perfil comprén tots els directoris ( "Els meus Documents, Descàrregues...") i altres característiques que són exlusives de cada usuari o comuns. 
 
@@ -198,7 +198,7 @@ Veiem les carpetes:
 
 ![](png/users.png)
 
-## 4.1 Creació del perfil
+## 5.1 Creació del perfil
 
 Segurament si hem creat un usuari nou, haurem comprovat en l'anterior punt que l'usuari acabat de crear:
 
@@ -222,7 +222,7 @@ Una vegada creat el perfil, podem entrar dins de la carpeta del nostre usuari i 
 
 Cadascuna té una funció que veiem tot seguit.
 
-## 4.1 Default
+## 5.2 Default
 
 La carpeta **c:\\users\\Default** [^2] és una plantilla per a la creació de nous perfils d'usuari. Conté configuracions i arxius predeterminats que es copien a qualsevol nou compte d'usuari quan es crea. Ací es troben:
 
@@ -234,13 +234,13 @@ Els nous usuaris de l'ordinador hereten estos arxius i configuracions la primera
 
 ![](png/CarpetesDefault.png)
 
-## 4.2 Acceso Público
+## 5.3 Acceso Público
 
 La carpeta **Acceso Público** [^3] Carpeta compartida accessible per tots els usuaris de l'equip per compartir arxius sense cap restricció.
 
 ![](png/CarpetesPublico.png)
 
-## 4.3 Carpeta de l'Usuari Específic
+## 5.4 Carpeta de l'Usuari Específic
 
 Cada usuari té la seva pròpia carpeta, que emmagatzema els seus arxius personals i configuracions específiques. Esta carpeta inclou:
 
@@ -255,7 +255,7 @@ Cada usuari té la seva pròpia carpeta, que emmagatzema els seus arxius persona
 
   \newpage
   
-# 5 Activitats
+# 6 Activitats
 
 ## Activitat 1
 
