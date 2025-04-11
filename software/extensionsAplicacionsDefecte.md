@@ -65,5 +65,8 @@ Entendre com funcionen les extensions de fitxers i com associar-les a diferents 
 
 # 6 Activitat
 
-Prova instal·lar el Acrobat Reader i assiganar esta aplicació per defecte als fitxers PDF.
-Desinstal·la posteriorment el Acrobat Reader i observa què passa. Continua sent l'aplicació per defecte?
+* Prova instal·lar el Acrobat Reader i...
+* assigna esta aplicació per defecte als fitxers PDF.
+* Mostra com es pot obrir un pdf amb una altra aplicació distinta.
+* Desinstal·la posteriorment el Acrobat Reader i...
+* observa què passa. Continua sent l'aplicació per defecte?
