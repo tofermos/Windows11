@@ -1,7 +1,7 @@
 ---
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 # WINDOWS 11
 |||
@@ -18,6 +18,7 @@ output:
 6. [Extensions i aplicacions per defecte](software/extensionsAplicacionsDefecte.html)|[![](recursos/iconopdf.png)](software/extensionsAplicacionsDefecte.pdf)|
 7. [Interfaces gràfic](interfaces/interfaces.html)|[![](recursos/iconopdf.png)](interfaces/interfaces.pdf)|
 8. [Gestió des de l'entorn gràfic](gestiodelequip/gestiodelequip.html)|[![](recursos/iconopdf.png)](gestiodelequip/gestiodelequip.pdf)|
+9. [Gestió en mode text](cmd/cmd.html)|[![](recursos/iconopdf.png)](cmd/cmd.pdf)|
 
 
 
