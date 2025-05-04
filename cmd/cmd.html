@@ -12,7 +12,7 @@
 <meta name="author" content="@tofermos 2024" />
 
 
-<title>extensionsAplicacionsDefecte</title>
+<title>cmd</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -2749,94 +2749,138 @@ border-radius: 0px;
 
 
 
-<h1 class="title toc-ignore"><div class="line-block">APLICACIONS PER
-DEFECTE I ASSOCIACIÓ A TIPUS DE FITXERS</div></h1>
+<h1 class="title toc-ignore"><div class="line-block">CMD</div></h1>
 <h4 class="author"><span class="citation">@tofermos</span> 2024</h4>
 
 </div>
 
 
 
-<div id="introducció" class="section level1">
-<h1>Introducció</h1>
-<p>El tema present tracta de les extensions de fitxers, l’associació a
-aplicacions i les aplicacions per defecte en Windows 11.</p>
+<hr />
+<div id="objectiu-de-la-sessió" class="section level1">
+<h1>Objectiu de la sessió</h1>
+<p>Aprendre a obrir el símbol del sistema (CMD) i fer servir ordres
+bàsiques per navegar i gestionar fitxers.</p>
 <hr />
 </div>
-<div id="les-extensions-de-fitxers-i-les-aplicacions-per-defecte-a-windows-11" class="section level1">
-<h1>2 Les extensions de fitxers i les aplicacions per defecte a Windows
-11</h1>
-<div id="què-són-les-extensions-de-fitxers" class="section level2">
-<h2>Què són les extensions de fitxers?</h2>
-<p>Les extensions de fitxers són sufixos que apareixen al final del nom
-d’un fitxer, separats per un punt (.), i serveixen per identificar el
-tipus de fitxer. Per exemple, <code>.txt</code> indica un fitxer de text
-pla, <code>.jpg</code> és una imatge, i <code>.mp4</code> un fitxer de
-vídeo. Aquestes extensions ajuden el sistema operatiu a saber amb quina
-aplicació obrir cada fitxer.</p>
+<div id="obrir-cmd" class="section level1">
+<h1>1. Obrir CMD</h1>
+<ul>
+<li>Escriure <code>cmd</code> al menú Inici i prémer Enter</li>
+<li>Prem <code>Win + R</code>, escriu <code>cmd</code> i prem Enter</li>
+<li>Opcional: Botó dret sobre <code>cmd</code> i seleccionar “Executar
+com a administrador”</li>
+</ul>
+<hr />
 </div>
+<div id="ordres-bàsiques" class="section level1">
+<h1>2. Ordres bàsiques</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Ordre</th>
+<th>Explicació</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>dir</code></td>
+<td>Llista els fitxers i carpetes de la ubicació actual</td>
+</tr>
+<tr class="even">
+<td><code>cd</code></td>
+<td>Canvia de directori (exemple: <code>cd Documents</code>)</td>
+</tr>
+<tr class="odd">
+<td><code>cd ..</code></td>
+<td>Pujar un nivell al directori anterior</td>
+</tr>
+<tr class="even">
+<td><code>cls</code></td>
+<td>Neteja la pantalla</td>
+</tr>
+<tr class="odd">
+<td><code>exit</code></td>
+<td>Tanca la finestra del CMD</td>
+</tr>
+</tbody>
+</table>
+<hr />
 </div>
-<div id="associació-de-fitxers-a-aplicacions" class="section level1">
-<h1>3 Associació de fitxers a aplicacions</h1>
-<p>Windows 11 utilitza aquestes extensions per associar els fitxers amb
-aplicacions concretes. Quan fas doble clic sobre un fitxer, el sistema
-busca l’aplicació assignada a aquella extensió i l’obre amb ella. Per
-exemple, si tens associats els fitxers <code>.pdf</code> a Microsoft
-Edge, tots els PDF s’obriran amb aquest navegador per defecte.</p>
-<p>L’usuari pot canviar aquesta associació segons les seues
-preferències. Això permet, per exemple, obrir imatges amb un editor
-diferent o documents amb un altre lector de PDFs.</p>
-<div id="com-es-canvia-laplicació-per-defecte-a-windows-11" class="section level2">
-<h2>Com es canvia l’aplicació per defecte a Windows 11?</h2>
-<p>Windows 11 ofereix una manera senzilla de gestionar aquestes
-associacions:</p>
+<div id="exercici-pràctic-bàsic" class="section level1">
+<h1>3. Exercici pràctic bàsic</h1>
 <ol style="list-style-type: decimal">
-<li><strong>Obrir la configuració</strong>: Fes clic al botó
-<em>Inici</em> i selecciona <em>Configuració</em> (⚙️).</li>
-<li><strong>Aplicacions</strong>: A la barra lateral esquerra,
-selecciona <em>Aplicacions</em> i després <em>Aplicacions per
-defecte</em>.</li>
-<li><strong>Buscar per tipus de fitxer</strong>: Pots cercar una
-extensió concreta, com <code>.mp3</code>, i triar amb quina aplicació
-vols obrir aquest tipus de fitxer.</li>
-<li><strong>Canviar per aplicació</strong>: També pots seleccionar una
-aplicació i veure quins tipus de fitxer té associats. Pots modificar les
-associacions aquí mateix.</li>
+<li>Obrir CMD</li>
+<li>Escriure <code>cd Desktop</code></li>
+<li>Crear una carpeta amb <code>mkdir Prova</code></li>
+<li>Entrar-hi amb <code>cd Prova</code></li>
+<li>Crear un fitxer amb <code>echo Hola &gt; hola.txt</code></li>
+<li>Veure el contingut amb <code>dir</code></li>
+<li>Llegir el fitxer amb <code>type hola.txt</code></li>
 </ol>
+<hr />
 </div>
+<div id="altres-ordres-útils" class="section level1">
+<h1>4. Altres ordres útils</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Ordre</th>
+<th>Funció</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>mkdir</code></td>
+<td>Crear carpeta nova</td>
+</tr>
+<tr class="even">
+<td><code>del</code></td>
+<td>Esborrar fitxer (exemple: <code>del hola.txt</code>)</td>
+</tr>
+<tr class="odd">
+<td><code>rmdir</code></td>
+<td>Esborrar carpeta (ha d’estar buida)</td>
+</tr>
+<tr class="even">
+<td><code>copy</code></td>
+<td>Copiar fitxer</td>
+</tr>
+<tr class="odd">
+<td><code>move</code></td>
+<td>Moure o reanomenar fitxer</td>
+</tr>
+</tbody>
+</table>
+<hr />
 </div>
-<div id="aplicacions-recomanades-per-defecte" class="section level1">
-<h1>4 Aplicacions recomanades per defecte</h1>
-<p>Windows 11 ve amb un conjunt d’aplicacions predeterminades:</p>
-<ul>
-<li><strong>Microsoft Edge</strong> per a navegar per internet i obrir
-PDFs.</li>
-<li><strong>Fotos</strong> per veure imatges.</li>
-<li><strong>Media Player</strong> per a vídeos i música.</li>
-<li><strong>Bloc de notes</strong> o <strong>WordPad</strong> per a
-fitxers de text senzill.</li>
-</ul>
-<p>Aquestes aplicacions es poden canviar fàcilment si prefereixes
-alternatives com Google Chrome, VLC Media Player o Adobe Reader.</p>
+<div id="utilitat-actual-del-cmd" class="section level1">
+<h1>5. Utilitat actual del CMD</h1>
+<div id="control-avançat-del-sistema" class="section level2">
+<h2>1. Control avançat del sistema</h2>
+<p>Permet accions fora de l’abast de la interfície gràfica: gestió
+d’usuaris, neteja de sistema, configuració avançada.</p>
 </div>
-<div id="conclusió" class="section level1">
-<h1>5 Conclusió</h1>
-<p>Entendre com funcionen les extensions de fitxers i com associar-les a
-diferents aplicacions ens permet personalitzar millor l’experiència d’ús
-del nostre ordinador. Windows 11 facilita aquesta tasca amb una
-configuració clara i accessible per adaptar el sistema a les necessitats
-de cada usuari.</p>
+<div id="formació-per-a-entorns-professionals" class="section level2">
+<h2>2. Formació per a entorns professionals</h2>
+<p>És essencial en camps com administració de sistemes, desenvolupament
+i ciberseguretat.</p>
 </div>
-<div id="activitat" class="section level1">
-<h1>6 Activitat</h1>
-<ul>
-<li>Prova instal·lar el Acrobat Reader i…</li>
-<li>assigna esta aplicació per defecte als fitxers PDF.</li>
-<li>Mostra com es pot obrir un pdf amb una altra aplicació
-distinta.</li>
-<li>Desinstal·la posteriorment el Acrobat Reader i…</li>
-<li>observa què passa. Continua sent l’aplicació per defecte?</li>
-</ul>
+<div id="compatible-amb-scripts-i-automatització" class="section level2">
+<h2>3. Compatible amb scripts i automatització</h2>
+<p>S’utilitza en molts processos d’instal·lació i configuració
+mitjançant <code>.bat</code> o integració amb PowerShell.</p>
+</div>
+<div id="aprenentatge-estructurat" class="section level2">
+<h2>4. Aprenentatge estructurat</h2>
+<p>Ajuda a entendre la jerarquia del sistema d’arxius i fomenta el
+pensament lògic i seqüencial.</p>
+</div>
+<div id="eina-educativa-accessible" class="section level2">
+<h2>5. Eina educativa accessible</h2>
+<p>Permet fer pràctiques bàsiques sense necessitat d’instal·lar
+programari addicional.</p>
+</div>
 </div>
 
 

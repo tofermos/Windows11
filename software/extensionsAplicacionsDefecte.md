@@ -23,7 +23,7 @@ output:
 
 # Introducció
 
-El tema presetn tracta de les extensions de fitxers, l'associació a aplicacions i les aplicacions per defecte en Windows 11.
+El tema present tracta de les extensions de fitxers, l'associació a aplicacions i les aplicacions per defecte en Windows 11.
 
 ---
 

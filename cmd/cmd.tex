@@ -1,0 +1,220 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  a4paper,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{setspace}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{catalan}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdfauthor={@tofermos 2024},
+  pdflang={ca-ES},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{CMD}
+\author{@tofermos 2024}
+\date{}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\setstretch{1.5}
+\newpage
+
+\renewcommand\tablename{Tabla}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Objectiu de la sessió}\label{objectiu-de-la-sessiuxf3}
+
+Aprendre a obrir el símbol del sistema (CMD) i fer servir ordres
+bàsiques per navegar i gestionar fitxers.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{1. Obrir CMD}\label{obrir-cmd}
+
+\begin{itemize}
+\tightlist
+\item
+  Escriure \texttt{cmd} al menú Inici i prémer Enter
+\item
+  Prem \texttt{Win\ +\ R}, escriu \texttt{cmd} i prem Enter
+\item
+  Opcional: Botó dret sobre \texttt{cmd} i seleccionar ``Executar com a
+  administrador''
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{2. Ordres bàsiques}\label{ordres-buxe0siques}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Ordre & Explicació \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\texttt{dir} & Llista els fitxers i carpetes de la ubicació actual \\
+\texttt{cd} & Canvia de directori (exemple: \texttt{cd\ Documents}) \\
+\texttt{cd\ ..} & Pujar un nivell al directori anterior \\
+\texttt{cls} & Neteja la pantalla \\
+\texttt{exit} & Tanca la finestra del CMD \\
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{3. Exercici pràctic bàsic}\label{exercici-pruxe0ctic-buxe0sic}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Obrir CMD
+\item
+  Escriure \texttt{cd\ Desktop}
+\item
+  Crear una carpeta amb \texttt{mkdir\ Prova}
+\item
+  Entrar-hi amb \texttt{cd\ Prova}
+\item
+  Crear un fitxer amb \texttt{echo\ Hola\ \textgreater{}\ hola.txt}
+\item
+  Veure el contingut amb \texttt{dir}
+\item
+  Llegir el fitxer amb \texttt{type\ hola.txt}
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{4. Altres ordres útils}\label{altres-ordres-uxfatils}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Ordre & Funció \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\texttt{mkdir} & Crear carpeta nova \\
+\texttt{del} & Esborrar fitxer (exemple: \texttt{del\ hola.txt}) \\
+\texttt{rmdir} & Esborrar carpeta (ha d'estar buida) \\
+\texttt{copy} & Copiar fitxer \\
+\texttt{move} & Moure o reanomenar fitxer \\
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{5. Utilitat actual del CMD}\label{utilitat-actual-del-cmd}
+
+\subsection{1. Control avançat del
+sistema}\label{control-avanuxe7at-del-sistema}
+
+Permet accions fora de l'abast de la interfície gràfica: gestió
+d'usuaris, neteja de sistema, configuració avançada.
+
+\subsection{2. Formació per a entorns
+professionals}\label{formaciuxf3-per-a-entorns-professionals}
+
+És essencial en camps com administració de sistemes, desenvolupament i
+ciberseguretat.
+
+\subsection{3. Compatible amb scripts i
+automatització}\label{compatible-amb-scripts-i-automatitzaciuxf3}
+
+S'utilitza en molts processos d'instal·lació i configuració mitjançant
+\texttt{.bat} o integració amb PowerShell.
+
+\subsection{4. Aprenentatge estructurat}\label{aprenentatge-estructurat}
+
+Ajuda a entendre la jerarquia del sistema d'arxius i fomenta el
+pensament lògic i seqüencial.
+
+\subsection{5. Eina educativa
+accessible}\label{eina-educativa-accessible}
+
+Permet fer pràctiques bàsiques sense necessitat d'instal·lar programari
+addicional.
+
+\end{document}
