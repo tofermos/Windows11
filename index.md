@@ -19,6 +19,7 @@ output:
 7. [Interfaces gràfic](interfaces/interfaces.html)|[![](recursos/iconopdf.png)](interfaces/interfaces.pdf)|
 8. [Gestió des de l'entorn gràfic](gestiodelequip/gestiodelequip.html)|[![](recursos/iconopdf.png)](gestiodelequip/gestiodelequip.pdf)|
 9. [Gestió en mode text](cmd/cmd.html)|[![](recursos/iconopdf.png)](cmd/cmd.pdf)|
+10.[Variables d'entorn](cmd/set.html)|[![](recursos/iconopdf.png)](cmd/set.pdf)|
 
 
 
