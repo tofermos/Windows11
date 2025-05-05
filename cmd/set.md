@@ -75,6 +75,14 @@ echo %PATH%
 
 ---
 
+# Des de l'entorn gràfic
+
+En **Configuració avançada del sistema**
+
+Podeu trobar-ho en *Este Equipo | Propietats*
+O executant **sysdm.cpl**
+
+![sysdm.cpl](sysdmcpl.png)
 # Com definir o modificar variables d'entorn
 
 ## Definir temporalment (durant la sessió CMD actual):
